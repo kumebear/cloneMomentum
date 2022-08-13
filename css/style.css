@@ -5,4 +5,5 @@ body {
     background-position: absolute;
     background-size: cover;
     color:aliceblue;
+    background-repeat: initial;
 }
