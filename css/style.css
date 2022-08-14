@@ -6,4 +6,31 @@ body {
     background-size: cover;
     color:aliceblue;
     background-repeat: initial;
+    display: grid;
+    grid-template-columns:  repeat(5,1fr);
+    grid-template-rows:  1fr 1fr 1fr 1fr 4fr ;
+}
+
+.style-clock{
+    font-size: 27px;
+    text-align: center;
+    grid-column:3;
+    grid-row: 2;
+}
+.style-login{
+    text-align: center;
+    grid-column: 3;
+    grid-row: 3;
+}
+.style-todo{
+    padding-left: 100px;
+    align-content: right;
+    grid-column: 5;
+    grid-row: 5;
+}
+.style-weather{
+    padding-left: 100px;
+    font-size: large;
+    grid-column: 5;
+    grid-row: 1;
 }

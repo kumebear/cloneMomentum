@@ -15,22 +15,24 @@ function handlerTodo(event){
     event.preventDefault();
     const todoObj = {id:Date.now(),text:todo.value};
     todo.value="";
-
     todoArray.push(todoObj);
     paintTodo(todoObj);
     saveTodo();
 }
 function paintTodo(todoObj){
-    const li=document.createElement("li");
-    const span=document.createElement("span");
-    const btn = document.createElement("button");
-    li.id=todoObj.id;
-    btn.innerText="❌";
-    btn.addEventListener("click",deleteTodo);
-    span.innerText=todoObj.text;
-    li.appendChild(span);
-    li.appendChild(btn);
-    ul.appendChild(li);
+        const liLength= document.querySelectorAll("li").length;
+        if(liLength<10){
+            const li=document.createElement("li");
+            const span=document.createElement("span");
+            const btn = document.createElement("button");
+            li.id=todoObj.id;
+            btn.innerText="❌";
+            btn.addEventListener("click",deleteTodo);
+            span.innerText=todoObj.text;
+            li.appendChild(span);
+            li.appendChild(btn);
+            ul.appendChild(li);
+        }
 
 }
 function saveTodo(){

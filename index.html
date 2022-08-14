@@ -8,22 +8,30 @@
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
 </head>
     <body>
+        <div id="clock" class="style-clock" ><h1>doesn't work</h1></div>
+        <form id="login-form" class="style-login">
+            <h2>
+                <input type="text" placeholder="write you ID" maxlength="16">        
+            </h2>
+        </form>
+        <h1 id="logined"class="hidden"></h1>
+        <div id="todo" class="style-todo">
+            <form id="todo-form">
+                <input type="text" placeholder="enter after write your 'to-do'"/>
+            </form>
+            <ul></ul>
+        </div>
         
-    <div id="clock"><h1>doesn't work</h1></div>
-    <form id="login-form">
-        <h2>
-            <input type="text" placeholder="write you ID" maxlength="16">        
-        </h2>
-    </form>
-    <h1 id="logined"class="hidden"></h1>
-    <form id="todo-form">
-        <input type="text" placeholder="enter after write your 'to-do'"/>
-    </form>
-    <ul></ul>
-    <div id="weather">
-        <span></span>
-        <span></span>
-    </div>
+        <div id="weather" class="style-weather">
+            <span></span></br>
+            <span></span>
+        </div>
+
+
+
+
+
+
     <script src='js/clock.js'></script>
     <script src='js/backgroundImage.js'></script>
     <script src='js/login.js'></script>

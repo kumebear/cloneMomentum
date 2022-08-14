@@ -20,6 +20,7 @@ if(user!== null){
     logined.appendChild(btn);
     loginForm.classList.add("hidden")
     logined.classList.remove("hidden");
+    logined.classList.add("style-login");
     btn.addEventListener("click",handlerLogout);
 
 }
